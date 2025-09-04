@@ -3,12 +3,12 @@ kind: ClusterConfig
 
 metadata:
   name: expense
-  region: us-east-2
+  region: us-east-1
 
 managedNodeGroups:
   - name: expense
-    instanceTypes: ["m5.large"]
+    instanceTypes: ["t3.micro"]
     desiredCapacity: 2
     minSize: 1
     maxSize: 3
-    spot: false
+    spot: true
